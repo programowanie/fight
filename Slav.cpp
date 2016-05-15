@@ -68,14 +68,8 @@ void Slav::heal()
 {
 	_hp = _baseHp;
 	_charge = 1;
-	_armPar.armHelmet = _baseArmPar.armHelmet;
-	_armPar.armArmor = _baseArmPar.armArmor;
-	_armPar.armShield = _baseArmPar.armShield;
-	_armPar.armLegs = _baseArmPar.armLegs;
-	_armPar.armShieldBlock = _baseArmPar.armShieldBlock;
-	_weapPar.weapDamage = _baseWeapPar.weapDamage;
-	_weapPar.weapPenetration = _baseWeapPar.weapPenetration;
-	_weapPar.weapChance = _baseWeapPar.weapChance;
+	_armPar = _baseArmPar;
+	_weapPar = _baseWeapPar;
 }
 
 double Slav::beastRatio()
